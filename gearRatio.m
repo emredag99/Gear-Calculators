@@ -11,7 +11,7 @@
 % For a fixed ratio gearbox, it is practical to fix one of the gear.
 % Therefore, there are 3 configuration of input and output that results in
 % gear reduction. These 3 cases are compared in this script by keeping the
-% # of teeth on ring gear constant. It is because the ring gear defines the
+% # of teeth on ring gear constant. It is because the ring gear determines the
 % outer diameter of the gearbox.
 
 clear all
