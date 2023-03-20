@@ -57,4 +57,3 @@ Ec=((1-nu1)/E1 + (1-nu2)/E2)^-1; %Contact modulus [MPa]
 
 w=5; %Face width [mm]
 
-pmax= (FpsTeeth*Ec/(pi*w*R))^(0.5); 
