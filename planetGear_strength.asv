@@ -57,3 +57,20 @@ Ec=((1-nu1)/E1 + (1-nu2)/E2)^-1; %Contact modulus [MPa]
 
 w=5; %Face width [mm]
 
+pmax= (FpsTeeth*Ec/(pi*w*R))^(0.5); %contact pressure
+
+%% Irrelevant but Input for Autodesk Inventor
+
+%Torque on Planet Gear due to interaction with sun
+Tp_s=Ti/3; %[N.mm]
+
+%Torque on Planet Gear due to interaction with ring
+Fr=(reduction*Fps*rBaseSun/(0.5*m*(Np+Ns))-Fps*cos(phi))/cos(phi); %[N]
+Tp_r=Fr*cos(phi)*(0.5*m*Np); %[N.mm]
+ 
+%Torque on ring gear due to planet gear
+Tr_p=Fr*cos(phi)*(0.5*m*Nr); %[N.mm]
+
+contactName= {"on Planet due to Sun"}
+
+
